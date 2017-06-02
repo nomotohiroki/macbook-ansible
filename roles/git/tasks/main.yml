@@ -1,0 +1,5 @@
+- git_config: >
+    name={{ item.name }}
+    scope={{ item.scope | default(global) }}
+    value={{ item.value }}
+  with_items: "{{git_configs}}"

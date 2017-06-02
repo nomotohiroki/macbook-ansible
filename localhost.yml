@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  roles:
+    - { role: homebrew, tags: [ homebrew ] }
+    - { role: homebrew-cask, tags: [ homebrew-cask ] }
+    - { role: mac, tags: [ mac ] }
+    - { role: git, tags: [ git ] }
+

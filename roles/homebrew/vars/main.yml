@@ -1,0 +1,25 @@
+homebrew_taps:
+  - caskroom/cask
+homebrew_packages:
+  - { name: ansible }
+  - { name: git }
+  - { name: wget }
+  - { name: curl }
+  - { name: jq }
+  - { name: rbenv }
+  - { name: pyenv }
+  - { name: pyenv-virtualenv }
+  - { name: lha }
+  - { name: mongodb }
+  - { name: nkf }
+  - { name: npm }
+  - { name: openssl }
+  - { name: docker }
+  - { name: docker-machine }
+  - { name: jenkins }
+  - { name: postgresql }
+  - { name: lftp }
+  - { name: awscli }
+  - { name: rbenv }
+  - { name: rbenv-bundler }
+  - { name: ruby-build }

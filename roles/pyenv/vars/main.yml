@@ -1,0 +1,4 @@
+pyenv_default_version: anaconda3-4.1.1
+pyenv_versions:
+  - { name: {{ pyenv_default_version }} }
+  - { name: 2.7.6 }

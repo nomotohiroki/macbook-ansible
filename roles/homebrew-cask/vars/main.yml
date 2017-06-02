@@ -1,0 +1,19 @@
+homebrew_cask_packages:
+  - { name: google-japanese-ime }
+  - { name: slack }
+  - { name: iterm2 }
+  - { name: google-chrome }
+  - { name: firefox }
+  - { name: adobe-reader }
+  - { name: skitch }
+  - { name: atom }
+  - { name: intellij-idea }
+  - { name: vagrant }
+  - { name: virtualbox }
+  - { name: gimp }
+  - { name: alfred }
+  - { name: kindle }
+  - { name: karabiner }
+  - { name: docker-toolbox }
+  - { name: postico }
+  - { name: font-fira-code }

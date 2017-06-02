@@ -1,0 +1,9 @@
+- name: pyenvの基本設定
+  # PATHとか
+
+- name: 各pythonのインストール
+  with_items: {{ pyenv_versions }}
+
+- name: デフォルトバージョンの指定
+  
+

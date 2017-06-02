@@ -1,0 +1,19 @@
+- name: homebrewのtapリポジトリ追加
+  homebrew_tap: tap={{ item }} state=present
+  with_items: "{{homebrew_taps}}"
+
+- name: homebrewをアップデート
+  homebrew: update_homebrew=yes
+
+- name: brewパッケージインストール
+  homebrew: >
+    name={{ item.name }}
+    state={{ item.state | default('latest') }}
+    install_options={{
+      item.install_options | default() | join(',')
+      if item.install_options is not string
+      else item.install_options
+    }}
+  with_items: "{{homebrew_packages}}"
+  register: brew_result
+
